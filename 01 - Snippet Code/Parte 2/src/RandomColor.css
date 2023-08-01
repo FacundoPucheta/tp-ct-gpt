@@ -1,1 +1,44 @@
-/* AQUÍ VAN TUS ESTILOS */
+/* RandomColor.css */
+.random-color {
+    border-radius: 99px;
+    background-color: yellow;
+
+}
+
+.random-color section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 10rem;
+    padding-block: 5rem;
+}
+
+.random-color p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    margin-top: -7px;
+}
+
+.random-color h1 {
+    display: flex;
+    align-items: start;
+    padding: 100px;
+}
+
+.random-color button {
+    font-size: 16px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.random-color button:hover {
+    background-color: black;
+    color: white;
+    transform: rotate(5deg );
+}
