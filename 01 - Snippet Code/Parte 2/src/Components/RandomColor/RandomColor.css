@@ -1,7 +1,7 @@
 /* RandomColor.css */
 .random-color {
     border-radius: 99px;
-    background-color: yellow;
+    border: 7px solid;
 
 }
 
@@ -16,9 +16,9 @@
 
 .random-color p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: medium;
+    font-size: small;
     font-weight: bold;
-    margin-top: -7px;
+    
 }
 
 .random-color h1 {
@@ -27,12 +27,14 @@
     padding: 100px;
 }
 
-.random-color button {
+.random-color button {  
+    min-height: 40px;
+    min-width: 300px;
     font-size: 16px;
     background-color: white;
     color: rgb(0, 0, 0);
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 55px;
     cursor: pointer;
     transition: 1s;
 }
