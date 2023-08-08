@@ -1,41 +1,63 @@
-function complicatedLevelThree(obj) {
-   var result = '';
-   var keys = Object.keys(obj);
-   var values = Object.values(obj);
-   var sum = values.reduce((acc, curr) => acc + curr, 0);
+// function complicatedLevelThree(obj) {
+//    let result = '';
+//    let keys = Object.keys(obj);
+//    let values = Object.values(obj);
+//    let sum = values.reduce((acc, curr) => acc + curr, 0);
 
-   for (var i = 0; i < keys.length; i++) {
-      var key = keys[i];
-      var value = values[i];
+//    for (let i = 0; i < keys.length; i++) {
+//       let key = keys[i];
+//       let value = values[i];
+//       if (value % 2 === 0) {
+//          result += key + ' is even. ';
+//       } else {
+//          let temp = value;
+//          while (temp > 0) {
+//             result += key + ', ';
+//             temp--;
+//          }
+//       }
+//    }
+
+//    let finalResult = '';
+//    let count = 0;
+//    while (count < sum) {
+//       finalResult += result;
+//       count++;
+//    }
+
+//    let reversedResult = finalResult.split('').reverse().join('');
+//    let formattedResult = reversedResult.toUpperCase();
+
+//    return formattedResult;
+// }
+
+// let obj = {
+//    a: 2,
+//    b: 3,
+//    c: 4,
+//    d: 5,
+// };
+
+function simplifiedLevelThree(obj) {
+   let result = '';
+
+   for (let key in obj) {
+      let value = obj[key];
       if (value % 2 === 0) {
          result += key + ' is even. ';
       } else {
-         var temp = value;
-         while (temp > 0) {
-            result += key + ', ';
-            temp--;
-         }
+         result += key + ', '.repeat(value);
       }
    }
 
-   var finalResult = '';
-   var count = 0;
-   while (count < sum) {
-      finalResult += result;
-      count++;
-   }
-
-   var reversedResult = finalResult.split('').reverse().join('');
-   var formattedResult = reversedResult.toUpperCase();
-
-   return formattedResult;
+   return result.toUpperCase();
 }
 
-var obj = {
+const obj = {
    a: 2,
    b: 3,
    c: 4,
    d: 5,
 };
 
-console.log(complicatedLevelThree(obj));
+console.log(simplifiedLevelThree(obj));

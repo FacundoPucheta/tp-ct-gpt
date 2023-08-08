@@ -1,11 +1,11 @@
 /* RandomColor.css */
-.random-color {
+.random {
     border-radius: 99px;
     border: 7px solid;
 
 }
 
-.random-color section {
+.randomSection {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,20 +14,10 @@
     padding-block: 5rem;
 }
 
-.random-color p {
+.randomBtn {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: small;
-    font-weight: bold;
-    
-}
-
-.random-color h1 {
-    display: flex;
-    align-items: start;
-    padding: 100px;
-}
-
-.random-color button {  
+    font-weight: bold;  
     min-height: 40px;
     min-width: 300px;
     font-size: 16px;
@@ -39,7 +29,7 @@
     transition: 1s;
 }
 
-.random-color button:hover {
+.randomBtn:hover {
     background-color: black;
     color: white;
     transform: rotate(5deg );
